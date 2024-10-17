@@ -222,7 +222,7 @@
       </p>
       <h3 class="text-3xl font-roboto-slab">Specializations & Tools</h3>
       <p>
-        Content Management Systems (CMS), Generative AI, WordPress, Drupal, Agile/Scrum
+        Content Management Systems (CMS), Generative AI, Contentful, WordPress, Drupal, Agile/Scrum
       </p>
     </div>
   </div>
