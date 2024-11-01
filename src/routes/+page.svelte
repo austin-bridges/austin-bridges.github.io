@@ -31,7 +31,7 @@ const hashHex = Array.from(new Uint8Array(hashBuffer)).map((b) => b.toString(16)
   Austin Bridges
 </h1>
 <p></p>
-<p class="text-7xl">Recordings on <a href="https://soundcloud.com/austin-bridges-133422285/tracks" class="underline hover:text-sky-400">Soundcloud</a>.</p>
+<p class="text-7xl"><a href="/audio" class="underline">Audio</a></p>
 <!-- <a href="https://soundcloud.com/austin-bridges-133422285/tracks"  class="h-10 p-5 block text-sky-700 transition-colors duration-150 border border-sky-500 rounded-lg focus:shadow-outline hover:bg-sky-500 hover:text-sky-100">Tracks on Soundcloud</a> -->
 
 <p class="text-7xl">Web Developer</p>
