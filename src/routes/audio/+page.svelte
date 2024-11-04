@@ -23,4 +23,4 @@
 
 <h2>Make Music</h2>
 <div class="text-lg">msg:<span id="message"></span></div>
-<button id="play-music" on:click={playMusic} class="px-2 py-1 bg-sky-200 hover:bg-sky-400 disabled:bg-slate-400">Play Music</button>
+<button id="play-music" onclick={playMusic} class="px-2 py-1 bg-sky-200 hover:bg-sky-400 disabled:bg-slate-400">Play Music</button>

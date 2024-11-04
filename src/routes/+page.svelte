@@ -1,7 +1,9 @@
 <script lang="ts">
-	let answer = '';
-  let show = false;
-  let message = '';
+  import { preventDefault } from 'svelte/legacy';
+
+	let answer = $state('');
+  let show = $state(false);
+  let message = $state('');
   // let p = 'web developer';
   let p = 'decede552e3b598662aabe842fd6cad48cb885f4'
 	async function handleSubmit() {
@@ -41,7 +43,7 @@ const hashHex = Array.from(new Uint8Array(hashBuffer)).map((b) => b.toString(16)
 <img src="/web-machine.jpg" alt="website machine" />
 {:else}
   <p>{message}</p>
-  <form on:submit|preventDefault={handleSubmit}>
+  <form onsubmit={preventDefault(handleSubmit)}>
     <span class="text-lg">Enter resume passcode:</span> 
     <input class="border border-sky-400 py-1" bind:value={answer} />
     <button disabled={!answer} type="submit" class="px-2 py-1 bg-sky-200 hover:bg-sky-400 disabled:bg-slate-400">

@@ -1,6 +1,12 @@
 <script>
-  // Sample data, you can replace this with actual data import or fetch logic
-  export let workExperience = [
+  
+  /**
+   * @typedef {Object} Props
+   * @property {any} [workExperience] - Sample data, you can replace this with actual data import or fetch logic
+   */
+
+  /** @type {Props} */
+  let { workExperience = [
     {
       title: "Web Developer",
       company: "CSM3K",
@@ -96,7 +102,7 @@
         "Developed promotional content for CBS TV shows on CBS.com.",
       ],
     },
-  ];
+  ] } = $props();
 
   
 </script>
