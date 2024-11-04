@@ -1,16 +1,9 @@
-<script>
-  import { onMount } from "svelte";
-  import * as Tone from "tone";
-
-  async function onMount() {
-    const synth = new Tone.Synth().toDestination();
-    await Tone.start();
-  }
-  
-  
+<script lang="js">
+  import * as Tone from "tone";  
   
   async function playMusic() {
-    
+    const synth = new Tone.Synth().toDestination();
+    await Tone.start();
     const now = Tone.now();
     synth.triggerAttackRelease("174", "1n", now);
     synth.triggerAttackRelease("285", "1n", now + 0.5);
